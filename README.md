@@ -43,6 +43,7 @@
     ```
 - styles.css
     ```
+    /*Estilos para que se vean los div*/
     div {
         border: 1px solid black;
         width: 100px;
@@ -50,7 +51,7 @@
         height: 100px;
     }
 
-
+    /*Estilos para centrar los div*/
     section{
         display: grid;
         justify-content: center;
@@ -97,7 +98,7 @@
 - Es un bloque de codigo que hace una tarea en especifica por ejemplo sumar, restar, saludar
 
 5. Pregunta: ¿Cuál es la diferencia entre "==" y "===" en JavaScript?: 
-- 
+- La diferencia es que el si utilizamos `==` es como un `o` significa que `a` es igual que `b` `a==b` , mientras que si utilizas el `===`, comparas 
 
 6. Pregunta: ¿Qué es el DOM (Document Object Model) en JavaScript?: 
 - Es la parte que nos permite manipular crear, cambiar, o remover elementos HTML desde Javascript. También podemos agregar eventos a esos elementos para hacer más dinámica nuestra página.

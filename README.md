@@ -98,7 +98,16 @@
 - Es un bloque de codigo que hace una tarea en especifica por ejemplo sumar, restar, saludar
 
 5. Pregunta: ¿Cuál es la diferencia entre "==" y "===" en JavaScript?: 
-- La diferencia es que el si utilizamos `==` es como un `o` significa que `a` es igual que `b` `a==b` , mientras que si utilizas el `===`, comparas 
+- La diferencia es que el si utilizamos `==` es como un `o` significa que `a` es igual que `b` `a==b` , mientras que si utilizas el `===`, compara que las variables que estén siendo comparadas tengan el mismo valor **y** el mismo tipo de variable. 
+    - Ejemplo:
+    ```
+    const numero = 1234 
+    const numeroComoCadenaDeTexto = '1234'  
+
+    console.log(numero == numeroComoCadenaDeTexto) //true
+    console.log(numero === numeroComoCadenaDeTexto)  //false
+    ```
+    **El valor de numero y numeroComoCadenaDeTexto se ven similares aquí. Sin embargo, el tipo de numero es Numero y el tipo de numeroComoCadenaDeTexto es Cadena. Incluso si los valores son el mismo, el tipo no es el mismo. De ahí que una verificación con == devuelva true, pero cuando se comprueba tanto el valor y el tipo, arroja false (falso).**
 
 6. Pregunta: ¿Qué es el DOM (Document Object Model) en JavaScript?: 
 - Es la parte que nos permite manipular crear, cambiar, o remover elementos HTML desde Javascript. También podemos agregar eventos a esos elementos para hacer más dinámica nuestra página.
